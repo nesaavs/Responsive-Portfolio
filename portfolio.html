@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+  <header>
+    <h2>My Portfolio</h2>
+  </header>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html" class="active align-self-start">Portfolio</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <!--Start image gallerie-->
+
+<h2>Responsive Image Gallery</h2>
+<h4>Portfolio</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/images/A_softball_Team.jpg">
+      <img src="assets/images/A_softball_Team.jpg" alt="A Softball Team" width="600" height="400">
+    </a>
+    <div class="desc">Allstars RP Softball Team</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/images/Many_Turtles.jpg">
+      <img src="assets/images/Many_Turtles.jpg" alt="Turtles" width="600" height="400">
+    </a>
+    <div class="desc">Turtles at the park's lake</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/images/peaches.jpg">
+      <img src="assets/images/peaches.jpg" alt="Delicious Peaches" width="600" height="400">
+    </a>
+    <div class="desc">Peaches Picking Season</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="assets/images/A_lake.jpg">
+      <img src="assets/images/A_lake.jpg" alt="Lake and Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Boy Scouts Reservation lake</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<!--End of Gallerie-->
+<!-- Footer -->
+
+<div class="clearfix"></div>
+<footer>
+  <p><h2>Footer</h2></p>
+</footer>
+
+<script>
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }
+  </script>
+
+
+</body>
+
+</html>
