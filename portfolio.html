@@ -2,95 +2,67 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>BasicPortfolio</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-  <header>
-    <h2>My Portfolio</h2>
-  </header>
-
-  <div class="topnav" id="myTopnav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="portfolio.html" class="active align-self-start">Portfolio</a>
-    <a href="contact.html">Contact</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-
-  <!--Start image gallerie-->
-
-<h2>Responsive Image Gallery</h2>
-<h4>Portfolio</h4>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="assets/images/A_softball_Team.jpg">
-      <img src="assets/images/A_softball_Team.jpg" alt="A Softball Team" width="600" height="400">
-    </a>
-    <div class="desc">Allstars RP Softball Team</div>
-  </div>
-</div>
-
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="assets/images/Many_Turtles.jpg">
-      <img src="assets/images/Many_Turtles.jpg" alt="Turtles" width="600" height="400">
-    </a>
-    <div class="desc">Turtles at the park's lake</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="assets/images/peaches.jpg">
-      <img src="assets/images/peaches.jpg" alt="Delicious Peaches" width="600" height="400">
-    </a>
-    <div class="desc">Peaches Picking Season</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="assets/images/A_lake.jpg">
-      <img src="assets/images/A_lake.jpg" alt="Lake and Mountains" width="600" height="400">
-    </a>
-    <div class="desc">Boy Scouts Reservation lake</div>
-  </div>
-</div>
-
-<div class="clearfix"></div>
-
-<!--End of Gallerie-->
-<!-- Footer -->
-
-<div class="clearfix"></div>
-<footer>
-  <p><h2>Footer</h2></p>
-</footer>
-
-<script>
-  function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-          x.className += " responsive";
-      } else {
-          x.className = "topnav";
-      }
-  }
-  </script>
-
-
+    <nav class="navbar navbar-light navbar-expand-md" id="navig">
+        <div class="container"><a class="navbar-brand" href="#">Nestor Saavedra Portfolio</a>
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+		<span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse justify-content-end"
+                id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation"><a class="nav-link text-dark active" href="index.html" id="ActiveButton">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-dark bg-success" href="portfolio.html">Potfolio</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link text-dark" href="Contact.html">Contact</a></li>
+          <li class="dropdown">
+		  <a class="dropdown-toggle nav-link text-dark dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="links.html" target="_blank">HW's-Links</a>
+            <div class="dropdown-menu" role="menu">
+			<a class="dropdown-item" role="presentation" href="#">Hangman Game</a>
+			<a class="dropdown-item" role="presentation" href="#">Crystal Collector Game</a>
+			<a class="dropdown-item" role="presentation" href="#">Giftastic</a></div>
+          </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="back">
+        <div class="jumbotron" id="mainJumbo">
+            <div></div>
+            <div id="perInfo">
+                <div class="row" id="row1">
+                    <div class="col col-12 col-sm-6 col-md-4 mb-4" id="col1"><img class="img-fluid m-auto href=&quot;https://nesaavs.github.io/word-guess-game&quot;" src="assets/img/hangman.jpg"></div>
+                    <div class="col col-12 col-sm-6 col-md-4 mb-4" id="col2"></div>
+                    <div class="col col-12 col-sm-6 col-md-4 mb-4" id="col3"></div>
+                </div>
+                <div class="row" id="row1">
+                    <div class="col col-12 col-sm-6 col-md-4 mb-4" id="col4"></div>
+                    <div class="col col-12 col-sm-6 col-md-4 mb-4" id="col5"></div>
+                    <div class="col col-12 col-sm-6 col-md-4 mb-4" id="col6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                </div>
+                <p class="copyright">Nestor Saavedra © 2018</p>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
